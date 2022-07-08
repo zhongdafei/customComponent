@@ -2,56 +2,56 @@
   <div class="app-container">
     <div class="col">
       type
-      <Button>默认按钮</Button>
-      <Button type="primary">默认按钮</Button>
-      <Button type="success">默认按钮</Button>
-      <Button type="info">默认按钮</Button>
-      <Button type="warning">默认按钮</Button>
-      <Button type="danger">默认按钮</Button>
+      <xf-button>默认按钮</xf-button>
+      <xf-button type="primary">默认按钮</xf-button>
+      <xf-button type="success">默认按钮</xf-button>
+      <xf-button type="info">默认按钮</xf-button>
+      <xf-button type="warning">默认按钮</xf-button>
+      <xf-button type="danger">默认按钮</xf-button>
     </div>
     <div class="col">
       round
-      <Button round>默认按钮</Button>
-      <Button round type="primary">默认按钮</Button>
-      <Button round type="success">默认按钮</Button>
-      <Button round type="info">默认按钮</Button>
-      <Button round type="warning">默认按钮</Button>
-      <Button round type="danger">默认按钮</Button> 
+      <xf-button round>默认按钮</xf-button>
+      <xf-button round type="primary">默认按钮</xf-button>
+      <xf-button round type="success">默认按钮</xf-button>
+      <xf-button round type="info">默认按钮</xf-button>
+      <xf-button round type="warning">默认按钮</xf-button>
+      <xf-button round type="danger">默认按钮</xf-button> 
     </div>
     <div class="col">
       plain
-      <Button plain>默认按钮</Button>
-      <Button plain type="primary">默认按钮</Button>
-      <Button plain type="success">默认按钮</Button>
-      <Button plain type="info">默认按钮</Button>
-      <Button plain type="warning">默认按钮</Button>
-      <Button plain type="danger">默认按钮</Button>
+      <xf-button plain>默认按钮</xf-button>
+      <xf-button plain type="primary">默认按钮</xf-button>
+      <xf-button plain type="success">默认按钮</xf-button>
+      <xf-button plain type="info">默认按钮</xf-button>
+      <xf-button plain type="warning">默认按钮</xf-button>
+      <xf-button plain type="danger">默认按钮</xf-button>
     </div> 
     <div class="col">
       icon
-      <Button icon="icon-code" plain></Button>
-      <Button icon="icon-history" plain type="primary"></Button>
-      <Button icon="icon-QRcode" plain type="success"></Button>
-      <Button icon="icon-all-fill" type="info"></Button>
-      <Button icon="icon-browse" plain type="warning"></Button>
-      <Button icon="icon-cut" plain type="danger"></Button>
+      <xf-button icon="icon-code" plain></xf-button>
+      <xf-button icon="icon-history" plain type="primary"></xf-button>
+      <xf-button icon="icon-QRcode" plain type="success"></xf-button>
+      <xf-button icon="icon-all-fill" type="info"></xf-button>
+      <xf-button icon="icon-browse" plain type="warning"></xf-button>
+      <xf-button icon="icon-cut" plain type="danger"></xf-button>
     </div> 
     <div class="col">
-      size
-      <Button icon="icon-code" plain></Button>
-      <Button icon="icon-history" plain type="primary"></Button>
-      <Button icon="icon-QRcode" plain type="success"></Button>
-      <Button icon="icon-all-fill" type="info"></Button>
-      <Button icon="icon-browse" plain type="warning"></Button>
-      <Button icon="icon-cut" plain type="danger"></Button>
+      disabled
+      <xf-button disabled icon="icon-code" plain></xf-button>
+      <xf-button icon="icon-history" plain type="primary"></xf-button>
+      <xf-button icon="icon-QRcode" plain type="success"></xf-button>
+      <xf-button icon="icon-all-fill" type="info"></xf-button>
+      <xf-button icon="icon-browse" plain type="warning"></xf-button>
+      <xf-button icon="icon-cut" plain type="danger"></xf-button>
     </div> 
   </div>
 </template>
 
 <script>
-import Button from '@/components/Button/index.vue'
+// import Button from '@/components/Button/index.vue'
 export default {
-  components: {Button},
+  // components: {Button},
   data() {
     return {
 

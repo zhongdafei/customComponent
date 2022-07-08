@@ -2,6 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Button</router-link> 
+      <router-link to="/message">Message</router-link> 
       <router-link to="/about">About</router-link>
     </div>
     <div class="body_container">
