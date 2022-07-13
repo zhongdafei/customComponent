@@ -8,11 +8,12 @@
       customClass,
     ]"
     v-show="visible"
+  :style="handleTop"
   >
   <div>
 
     <span :class="['iconfont', iconClas]"></span>
-    {{ message }}
+    {{ message + id }}
   </div>
     <span
       v-show="showClose"
@@ -36,6 +37,7 @@ export default {
       showClose: true,
       customClass: "",
       time:null,
+      top:0,
     };
   },
   computed: {
@@ -48,6 +50,9 @@ export default {
       };
       return temObj[this.type];
     },
+    handleTop(){
+      return {top:this.top + 'px'}
+    }
   },
   methods: {
     handleclose() { 
@@ -56,11 +61,10 @@ export default {
     startTime(){
     this.time =  setTimeout(()=>{
         this.onClose()
-      },2000)
+      },3000)
     }
   },
-  mounted() {
-    console.log(this.message);
+  mounted() { 
     this.startTime()
   },
   beforeDestroy(){

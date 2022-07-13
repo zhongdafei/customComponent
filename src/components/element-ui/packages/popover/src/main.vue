@@ -97,7 +97,7 @@ export default {
       addClass(reference, 'el-popover__reference');
       reference.setAttribute('aria-describedby', this.tooltipId);
       reference.setAttribute('tabindex', this.tabindex); // tab序列
-      popper.setAttribute('tabindex', 0);
+      popper.setAttribute('tabindex'  , 0);
 
       if (this.trigger !== 'click') {
         on(reference, 'focusin', () => {

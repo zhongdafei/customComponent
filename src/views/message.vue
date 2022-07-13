@@ -20,7 +20,7 @@ export default {
       // Message.success('耶✌！')
       Message({
         message:'成功！✌',
-        type:'warning',
+        type:'success',
       })
        
     },

@@ -60,7 +60,7 @@ export default {
   methods: {
     handleClick() {
       if (this.disabled) return false;
-      this.$emit('click')
+      this.$emit("click");
     },
   },
   mounted() {},
@@ -72,17 +72,25 @@ export default {
   border: 1px solid #dcdfe6;
   line-height: 1;
   white-space: nowrap;
+  user-select: none;
   cursor: pointer;
   padding: 12px 20px;
   font-size: 14px;
   border-radius: 4px;
+  display: inline-block;
+  &:hover {
+    color: #409eff;
+    background-color: #ecf5ff;
+    border-color: #b3d8ff;
+  }
 }
 .xf-button-primary {
   color: #fff;
   background-color: #409eff;
   &:hover {
-    background: #66b1ff;
-    border-color: #66b1ff;
+    color: #409eff;
+    background-color: #ecf5ff;
+    border-color: #b3d8ff;
   }
   &.is-plain {
     color: #409eff;
@@ -100,6 +108,7 @@ export default {
   background-color: #67c23a;
   &:hover {
     background: #85ce61;
+    color: #fff;
     border-color: #85ce61;
   }
   &.is-plain {
@@ -118,6 +127,7 @@ export default {
   background-color: #909399;
   &:hover {
     background: #a6a9ad;
+    color: #fff;
     border-color: #a6a9ad;
   }
   &.is-plain {
@@ -135,8 +145,9 @@ export default {
   color: #fff;
   background-color: #e6a23c;
   &:hover {
-    background: #f78989;
-    border-color: #f78989;
+    background: #e6a23cb0;
+    color: #fff;
+    border-color: #e6a23c;
   }
   &.is-plain {
     color: #e6a23c;
@@ -153,8 +164,9 @@ export default {
   color: #fff;
   background-color: #f56c6c;
   &:hover {
-    background: #66b1ff;
-    border-color: #66b1ff;
+    background-color: #f56c6cbf;
+    border-color: #fbc4c4;
+    color: #fff;
   }
   &.is-plain {
     color: #f56c6c;
