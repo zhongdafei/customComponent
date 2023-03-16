@@ -20,11 +20,53 @@ const routes = [
     component: () => import(/* webpackChunkName: "popover" */ '../views/popover.vue')
   },
   {
+    path: '/tree',
+    name: 'Tree',
+    component: () => import(/* webpackChunkName: "tree" */ '../views/Tree.vue')
+  },
+  {
+    path: '/messagebox',
+    name: 'MessageBox',
+    component: () => import(/* webpackChunkName: "MessageBox" */ '../views/messageBox.vue')
+  },
+  {
+    path: '/table',
+    name: 'Table',
+    component: () => import(/* webpackChunkName: "Table" */ '../views/table.vue')
+  },
+  {
+    path: '/select',
+    name: 'Select',
+    component: () => import(/* webpackChunkName: "Select" */ '../views/select.vue')
+  },
+  {
+    path: '/transfer',
+    name: 'transfer',
+    component: () => import(/* webpackChunkName: "transfer" */ '../views/transfer.vue')
+  },
+  {
+    path: '/waterfall',
+    name: 'waterfall',
+    component: () => import(/* webpackChunkName: "waterfall" */ '../views/waterfall.vue')
+  },
+  {
+    path: '/map',
+    name: 'map',
+    component: () => import(/* webpackChunkName: "map" */ '../views/map/index.vue')
+  },
+  {
+    path: '/calendar',
+    name: 'calendar',
+    component: () => import(/* webpackChunkName: "calendar" */ '../views/calendar.vue')
+  },
+  {
+    path: '/iCalendar',
+    name: 'iCalendar',
+    component: () => import(/* webpackChunkName: "iCalendar" */ '../views/iCalendar.vue')
+  },
+  {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
 ]

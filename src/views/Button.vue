@@ -48,10 +48,8 @@
   </div>
 </template>
 
-<script>
-// import Button from '@/components/Button/index.vue'
-export default {
-  // components: {Button},
+<script> 
+export default { 
   data() {
     return {
 

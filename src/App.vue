@@ -1,16 +1,27 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Button</router-link> 
-      <router-link to="/message">Message</router-link> 
-      <router-link to="/popover">Popover</router-link> 
-      <router-link to="/about">About</router-link>
+      <router-link v-for="item in tempRoutes" :key="item.name" :to="item.path">{{item.name}}</router-link>  
     </div>
     <div class="body_container">
       <router-view/>
     </div>
   </div>
 </template>
+<script> 
+import router from '@/router'
+export default {
+  data(){
+    return {
+      tempRoutes:[],
+    }
+  },
+  mounted(){ 
+    this.tempRoutes = router.options.routes
+  },
+  methods:{}
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -19,7 +30,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  display: flex;
+  display: flex; 
 }
 
 #nav {
@@ -40,5 +51,6 @@
 }
 .body_container{
   padding: 15px;
+  flex: 1;
 }
 </style>
